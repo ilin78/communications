@@ -26,6 +26,25 @@
         color: rgba(0, 0, 0, 0.44);
     }
 
+    &__success-block {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+        height: 400px;
+        svg {
+            width: 48px;
+            height: 48px;
+        }
+        h2 {
+            margin-top: 10px;
+        }
+        p {
+            color: #adadad
+        }
+    }
+
     .button {
         text-transform: uppercase;
         /*ВОЙТИ В АККАУНТ*/

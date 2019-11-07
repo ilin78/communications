@@ -17,9 +17,9 @@ class LoginForm extends Component {
         <Form.Item>
  
             <Input
-            prefix={<Icon type="user" style={{ color: 'rgba(0,0,0,.25)' }} />}
+            prefix={<Icon type="mail" style={{ color: 'rgba(0,0,0,.25)' }} />}
+            placeholder="E-Mail"
             size="large"
-            placeholder="Username"
             validateStatus="success"
             />
     
@@ -30,7 +30,7 @@ class LoginForm extends Component {
             prefix={<Icon type="lock" style={{ color: 'rgba(0,0,0,.25)' }} />}
             size="large"
             type="password"
-            placeholder="Password"
+            placeholder="Пароль"
             />
  
         </Form.Item>
