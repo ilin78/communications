@@ -6,7 +6,7 @@ import { Button, Block } from 'components';
 
 class RegisterForm extends Component {
     render() { 
-        const succes = false;
+        const succes = true;
         return (
         <div>
         <div className="auth__top">
