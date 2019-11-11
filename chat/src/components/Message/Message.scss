@@ -1,9 +1,11 @@
-
-
 .message {
-   display: flex;
-   max-width:  440px;
-   margin-bottom: 15px;
+   $self: &;
+ 
+   &__content {
+      display: flex;
+      max-width: 440px;
+      margin-bottom: 15px;
+   }
 
    &__avatar {
       display: flex;
@@ -12,8 +14,8 @@
          border-radius: 50px;
          width: 33px;
          height: 33px;
-         margin-right: 12px;
-         margin-bottom: 18px;
+         margin-right: 13px;
+         margin-bottom: 23px;
       }
    }
 
@@ -33,5 +35,43 @@
    &__text {
       color: white;
       line-height: 20px;
+   }
+
+   &--isme {
+      display: flex;
+      flex-direction:  row-reverse;
+      
+      #{$self}__content {
+         margin-bottom: 15px;
+         flex-direction: row-reverse;
+         margin-right: 0px;
+         margin-left: 13px;
+      }
+
+      #{$self}__avatar {
+         img{
+            margin-bottom: 15px;
+            flex-direction: row-reverse;
+         }
+      }
+
+      #{$self}__info {
+         text-align: right;
+         img{
+            margin-bottom: 15px;
+            flex-direction: row-reverse;
+         }
+      }
+      
+      #{$self}__bubble {
+         background: #ffffff;
+         border: 1px solid #ececec;
+         box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.002);
+         border-radius: 12px 12px 0px 12px;
+      }
+      
+      #{$self}__text {
+         color: #000000;
+      }
    }
 }
