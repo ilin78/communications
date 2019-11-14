@@ -6,7 +6,7 @@ node_js:
 
 before_script: cd chat
 
-script: cd chat && yarn install && cd ..
+script: cd chat && npm install && cd ..
 
 branches:
   only:
