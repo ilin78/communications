@@ -6,6 +6,8 @@ node_js:
 
 before_script: cd chat
 
+script: cd chat && yarn install && cd ..
+
 branches:
   only:
     - master
