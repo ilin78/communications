@@ -1,0 +1,11 @@
+sudo: false
+
+language: node_js
+node_js:
+  - 10.16.0
+
+before_script: cd chat
+
+branches:
+  only:
+    - master
